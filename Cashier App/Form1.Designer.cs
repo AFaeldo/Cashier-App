@@ -78,18 +78,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(671, 11);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label1.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Snow;
+            this.label1.Location = new System.Drawing.Point(652, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 15);
+            this.label1.Size = new System.Drawing.Size(153, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "TOTAL AMOUNT :";
             // 
             // lblTotalAmount
             // 
             this.lblTotalAmount.AutoSize = true;
+            this.lblTotalAmount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblTotalAmount.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalAmount.ForeColor = System.Drawing.Color.Snow;
             this.lblTotalAmount.Location = new System.Drawing.Point(803, 9);
             this.lblTotalAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalAmount.Name = "lblTotalAmount";
@@ -159,33 +163,33 @@
             // lblTosilogSubTotal
             // 
             this.lblTosilogSubTotal.AutoSize = true;
-            this.lblTosilogSubTotal.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTosilogSubTotal.Location = new System.Drawing.Point(666, 207);
+            this.lblTosilogSubTotal.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTosilogSubTotal.Location = new System.Drawing.Point(635, 209);
             this.lblTosilogSubTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTosilogSubTotal.Name = "lblTosilogSubTotal";
-            this.lblTosilogSubTotal.Size = new System.Drawing.Size(70, 15);
+            this.lblTosilogSubTotal.Size = new System.Drawing.Size(75, 18);
             this.lblTosilogSubTotal.TabIndex = 11;
             this.lblTosilogSubTotal.Text = "Sub Total";
             // 
             // lblCornsilogSubTotal
             // 
             this.lblCornsilogSubTotal.AutoSize = true;
-            this.lblCornsilogSubTotal.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCornsilogSubTotal.Location = new System.Drawing.Point(383, 207);
+            this.lblCornsilogSubTotal.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCornsilogSubTotal.Location = new System.Drawing.Point(360, 209);
             this.lblCornsilogSubTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCornsilogSubTotal.Name = "lblCornsilogSubTotal";
-            this.lblCornsilogSubTotal.Size = new System.Drawing.Size(70, 15);
+            this.lblCornsilogSubTotal.Size = new System.Drawing.Size(75, 18);
             this.lblCornsilogSubTotal.TabIndex = 10;
             this.lblCornsilogSubTotal.Text = "Sub Total";
             // 
             // lblPorksilogSubTotal
             // 
             this.lblPorksilogSubTotal.AutoSize = true;
-            this.lblPorksilogSubTotal.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorksilogSubTotal.Location = new System.Drawing.Point(107, 207);
+            this.lblPorksilogSubTotal.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorksilogSubTotal.Location = new System.Drawing.Point(78, 209);
             this.lblPorksilogSubTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPorksilogSubTotal.Name = "lblPorksilogSubTotal";
-            this.lblPorksilogSubTotal.Size = new System.Drawing.Size(70, 15);
+            this.lblPorksilogSubTotal.Size = new System.Drawing.Size(75, 18);
             this.lblPorksilogSubTotal.TabIndex = 9;
             this.lblPorksilogSubTotal.Text = "Sub Total";
             // 
@@ -196,6 +200,7 @@
             this.txtQuantityTocino.Name = "txtQuantityTocino";
             this.txtQuantityTocino.Size = new System.Drawing.Size(139, 21);
             this.txtQuantityTocino.TabIndex = 8;
+            this.txtQuantityTocino.TextChanged += new System.EventHandler(this.txtQuantityTocino_TextChanged);
             // 
             // txtQuantityCorn
             // 
@@ -204,6 +209,7 @@
             this.txtQuantityCorn.Name = "txtQuantityCorn";
             this.txtQuantityCorn.Size = new System.Drawing.Size(139, 21);
             this.txtQuantityCorn.TabIndex = 7;
+            this.txtQuantityCorn.TextChanged += new System.EventHandler(this.txtQuantityCorn_TextChanged);
             // 
             // label4
             // 
@@ -245,6 +251,7 @@
             this.txtQuantityPork.Name = "txtQuantityPork";
             this.txtQuantityPork.Size = new System.Drawing.Size(139, 21);
             this.txtQuantityPork.TabIndex = 3;
+            this.txtQuantityPork.TextChanged += new System.EventHandler(this.txtQuantityPork_TextChanged);
             // 
             // pictureBox3
             // 
@@ -322,11 +329,11 @@
             // lblJuiceSubTotal
             // 
             this.lblJuiceSubTotal.AutoSize = true;
-            this.lblJuiceSubTotal.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJuiceSubTotal.Location = new System.Drawing.Point(657, 248);
+            this.lblJuiceSubTotal.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJuiceSubTotal.Location = new System.Drawing.Point(646, 244);
             this.lblJuiceSubTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblJuiceSubTotal.Name = "lblJuiceSubTotal";
-            this.lblJuiceSubTotal.Size = new System.Drawing.Size(70, 15);
+            this.lblJuiceSubTotal.Size = new System.Drawing.Size(75, 18);
             this.lblJuiceSubTotal.TabIndex = 14;
             this.lblJuiceSubTotal.Text = "Sub Total";
             // 
@@ -366,22 +373,22 @@
             // lblIceTeaSubTotal
             // 
             this.lblIceTeaSubTotal.AutoSize = true;
-            this.lblIceTeaSubTotal.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIceTeaSubTotal.Location = new System.Drawing.Point(382, 248);
+            this.lblIceTeaSubTotal.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIceTeaSubTotal.Location = new System.Drawing.Point(371, 244);
             this.lblIceTeaSubTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIceTeaSubTotal.Name = "lblIceTeaSubTotal";
-            this.lblIceTeaSubTotal.Size = new System.Drawing.Size(70, 15);
+            this.lblIceTeaSubTotal.Size = new System.Drawing.Size(75, 18);
             this.lblIceTeaSubTotal.TabIndex = 13;
             this.lblIceTeaSubTotal.Text = "Sub Total";
             // 
             // lblWaterSubTotal
             // 
             this.lblWaterSubTotal.AutoSize = true;
-            this.lblWaterSubTotal.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWaterSubTotal.Location = new System.Drawing.Point(105, 248);
+            this.lblWaterSubTotal.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWaterSubTotal.Location = new System.Drawing.Point(89, 244);
             this.lblWaterSubTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWaterSubTotal.Name = "lblWaterSubTotal";
-            this.lblWaterSubTotal.Size = new System.Drawing.Size(70, 15);
+            this.lblWaterSubTotal.Size = new System.Drawing.Size(75, 18);
             this.lblWaterSubTotal.TabIndex = 12;
             this.lblWaterSubTotal.Text = "Sub Total";
             // 
@@ -414,6 +421,7 @@
             this.txtQuantityJuice.Name = "txtQuantityJuice";
             this.txtQuantityJuice.Size = new System.Drawing.Size(139, 21);
             this.txtQuantityJuice.TabIndex = 6;
+            this.txtQuantityJuice.TextChanged += new System.EventHandler(this.txtQuantityJuice_TextChanged);
             // 
             // txtQuantityIceTea
             // 
@@ -422,6 +430,7 @@
             this.txtQuantityIceTea.Name = "txtQuantityIceTea";
             this.txtQuantityIceTea.Size = new System.Drawing.Size(139, 21);
             this.txtQuantityIceTea.TabIndex = 5;
+            this.txtQuantityIceTea.TextChanged += new System.EventHandler(this.txtQuantityIceTea_TextChanged);
             // 
             // txtQuantityWater
             // 
@@ -430,6 +439,7 @@
             this.txtQuantityWater.Name = "txtQuantityWater";
             this.txtQuantityWater.Size = new System.Drawing.Size(139, 21);
             this.txtQuantityWater.TabIndex = 4;
+            this.txtQuantityWater.TextChanged += new System.EventHandler(this.txtQuantityWater_TextChanged);
             // 
             // pictureBox6
             // 

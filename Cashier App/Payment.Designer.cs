@@ -56,6 +56,7 @@
             this.txtTotalAmount.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalAmount.Location = new System.Drawing.Point(193, 64);
             this.txtTotalAmount.Name = "txtTotalAmount";
+            this.txtTotalAmount.ReadOnly = true;
             this.txtTotalAmount.Size = new System.Drawing.Size(143, 21);
             this.txtTotalAmount.TabIndex = 3;
             // 
@@ -138,6 +139,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Payment";
             this.Text = "Payment";
+            this.Load += new System.EventHandler(this.Payment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
